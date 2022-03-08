@@ -6,6 +6,7 @@ Coursework for module "Principles of Distributed Ledgers" for Imperial College o
 Once you completed the contract (everything to be completed is in the `contracts/TicTacToe.sol`), you can run 
 
 `docker build -t tic-tac-toe .`
+
 to build the tic-tac-toe docker image.
 
 
