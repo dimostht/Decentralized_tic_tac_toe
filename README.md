@@ -1,10 +1,6 @@
-# COMP70017-CW2
+## CW
 
-In coursework 2, you are given a decentralized application for a tic-tac-toe game. The game isn't yet functional, and we expect you to know the rules of the game.
-
-We hence ask you to please complete the missing parts, identified with `/*Please complete the code here.*/`.
-
-We packaged the entire code into a docker container, such that you literally don't need to configure anything.
+Coursework for module "Principles of Distributed Ledgers" for Imperial College of London.
 
 ## Instructions
 Once you completed the contract (everything to be completed is in the `contracts/TicTacToe.sol`), you can run `docker build -t tic-tac-toe .` to build the tic-tac-toe docker image.
@@ -24,23 +20,3 @@ To set up and play your tic-tac-toe game, you can:
 `docker run -p 8080:8080 -d tic-tac-toe`
 
 3. open `http://localhost:8080/` in two separate web browsers with each a separate Metamask installed, and enjoy the game. On Chrome you can create **two different users** and install Metamask in each. You'll need to configure Metamask to connect to your local chain as well (which is not graded but we leave this up to you as part of the exercise for your own testing).
-
-# Grading Scheme
-
-You can get 100% of the grades with 10 points, distributed as follows over the 7 functions of the contract:
-
-`_threeInALine()` : 1 point
-
-`_getStatus()` : 4 points
-
-`_checkStatus()` : 1 point
-
-`myTurn()` : 1 point
-
-`_myTurn()` : 1 point
-
-`validMove()` : 1 point
-
-`_validMove()` : 1 point
-
-Once you're done, please upload your zip file containing the entire project on Cate.
