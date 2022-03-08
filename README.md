@@ -3,7 +3,7 @@
 Coursework for module "Principles of Distributed Ledgers" for Imperial College of London.
 
 ## Instructions
-Once you completed the contract (everything to be completed is in the `contracts/TicTacToe.sol`), you can run 
+Once you completed the contract, you can run 
 
 `docker build -t tic-tac-toe .`
 
