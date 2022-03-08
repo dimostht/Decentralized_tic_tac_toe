@@ -57,7 +57,39 @@ contract TicTacToe {
      * @return the status of the game
      */
     function _getStatus(uint pos) private view returns (uint) {
-        /*Please complete the code here.*/
+        function _getStatus(uint pos) private view returns (uint) {
+        // horizontal or vertical win
+        uint r = pos / 3;
+        uint c = pos % 3;
+        bool win1 = _threeInALine(board[r * 3], board[r * 3 + 1], board[r * 3 + 2]);
+        bool win2 = _threeInALine(board[c], board[c + 3], board[c + 6]);
+
+        // diagonal win one
+        bool win3 = _threeInALine(board[0], board[4], board[8]);
+
+        // diagonal win two
+        bool win4 = _threeInALine(board[2], board[4], board[6]);
+
+       // there is a win
+        bool win = (win1 || win2 || win3 || win4);
+
+        // last player wins
+        if (win){
+          return board[pos];
+        }
+
+        // no winner and no empty cell means draw
+        bool draw = true;
+        for (uint i=0; i < board.length; i++) {
+          if (board[i] == 0) {
+            draw = false;
+          }
+        }
+        if (draw)
+          return 3;
+
+        // ongoing
+        return 0;
     }
 
     /**
